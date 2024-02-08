@@ -1,0 +1,46 @@
+Guide to install python & openai module
+
+1. 파이썬 python 3.11.0 설치
+https://www.python.org/downloads/release/python-3110/
+
+
+2. 파이썬 설치 후 버전 확인 - 3.11이 나오면 정상적으로 파이썬이 설치된 것
+- macOS: terminal 앱 실행 후 다음 명령어 작성
+python3 --version
+
+- windows: cmd(명령 프롬프트) 실행 후 다음 명령어 작성
+python --version
+
+windows pc에서 버전이 안나오는 경우
+설정 > 시스템 > 정보 > 고급 시스템 설정 > 환경변수 
+시스템 환경변수의 Path 편집 > 새로 만들기에서 다음 두 개의 경로 추가
+(*USERNAME*은 각 컴퓨터 사용자 이름으로 수정할 것)
+
+C:\Users\*USERNAME*\AppData\Local\Programs\Python\Python311
+C:\Users\*USERNAME*\AppData\Local\Programs\Python\Python311\Scripts
+
+
+3. openai 모듈 설치
+- macOS: terminal.app 실행 후 다음 명령어 작성
+pip3 install openai 
+
+- windows: cmd(명령 프롬프트) 실행 후 다음 명령어 작성
+pip install openai
+
+>> 2 과정에서 3.11 버전이 나오지 않은 경우 다음 명령어 작성
+python3.11 -m pip install openai
+
+
+4. terminal 및 cmd 종료 후 터치디자이너 실행
+
+
+5. preference  (또는 settings) > Python 64-bit Module Path에서 다음과 같이 경로 설정
+- macOS
+/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages
+
+- windows(*USERNAME*은 각 컴퓨터 사용자 이름으로 수정할 것, 영어만 가능)
+C:\Users\*USERNAME*\AppData\Local\Programs\Python\Python311\Lib\site-packages
+
+
+6. 설정에서 SAVE 버튼 누른 후 터치디자이너 패치 저장 후 재시작
+
